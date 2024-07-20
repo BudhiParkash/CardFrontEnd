@@ -1,0 +1,52 @@
+.credit-card {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #4A90E2, #9013FE);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+  }
+  
+  .credit-card__bank-name {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .credit-card__chip {
+    width: 50px;
+    height: 35px;
+    background-color: gold;
+    border-radius: 5px;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+  }
+  
+  .credit-card__number {
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    margin: 20px 0;
+  }
+  
+  .credit-card__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .credit-card__holder,
+  .credit-card__expiry {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+  }
+  
+  .credit-card__holder span:first-child,
+  .credit-card__expiry span:first-child {
+    font-size: 0.7em;
+    color: #ccc;
+  }
+  
