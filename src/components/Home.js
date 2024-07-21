@@ -1,5 +1,5 @@
 import React from "react";
-import CardList from "./CardList";
+import Card from "./Card";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../style/home.css';
@@ -41,11 +41,11 @@ const Home = () => {
                         </Carousel>
                     </div>
                 </div>
-                <div className="credit-card-step-section">
+                {/* <div className="credit-card-step-section">
                     <img src={Image} alt="Credit Card" />
-                </div>
-                <div className="credit-card-container">
-                    <CardList />
+                </div> */}
+                <div>
+                    <Card/>
                 </div>
             </div>
         </>
