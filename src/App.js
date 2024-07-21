@@ -1,51 +1,32 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
-import Footer from './components/Footer'
-import axios from 'axios';
-import CardList from './components/CardList'
+import Footer from './components/Footer';
+import CardList from './components/CardList';
+import Home from './components/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  const [cards, setCards] = useState([]);
-
-  // useEffect(() => {
-  //   // Make an API call to fetch card data
-  //   axios.get('https://api.example.com/cards') // Replace with your actual API URL
-  //     .then(response => {
-  //       setCards(response.data);
-  //     })
-  //     .catch(error => {
-  //       console.error('Error fetching card data:', error);
-  //     });
-  // }, []);
-
+const App = () => {
   return (
-    <div>
-<Header/>
-<h1>Credit Card List</h1>
-      <div className="card-container">
-      <CardList 
-          cardNumber="1234567812345678"
-          cardHolder="Shivam Sharma"
-          expiryDate="12/28"
-          bankName="Bank of Axis"/>
-        {/* {cards.map(card => (
-          <CardList 
-          cardNumber="1234567812345678"
-          cardHolder="John Doe"
-          expiryDate="12/24"
-          bankName="Bank of React"
-            // key={card.id} // Ensure each card has a unique id
-            // cardNumber={578945612301}
-            // cardHolder={ShivamSharma}
-            // expiryDate={card.expiryDate}
-            // bankName={card.bankName}
-          />
-        ))} */}
-      </div>
-<Footer/>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+      <Route path="/" element={<Home />} />
+        <Route path="/card-list" element={<CardList/>} />
+      </Routes>
+      <Footer/>
+    </Router>
   );
-}
-
+};
 export default App;
+
+
+
+
+
+
+
+
+
+
