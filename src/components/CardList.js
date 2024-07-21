@@ -4,7 +4,7 @@ import StarRatings from 'react-star-ratings';
 import SBICard from '../assesst/sbi_card.jpg';
 import { useNavigate } from "react-router-dom";
 
-const CardList = ({name, anual_fees, joining_fees, description, rating, review, card_link, image}) => {
+const CardList = ({name, annual_fees, joining_fees, description, rating, review, card_link, image ,card_type}) => {
     const navigate = useNavigate();
     return (
         <>
@@ -15,7 +15,7 @@ const CardList = ({name, anual_fees, joining_fees, description, rating, review, 
                             <img src={image} alt="sbi_card" />
                         </div>
                         <div className="credit-card-content-section">
-                            <div className="credit-card-content-heading">{name}</div>
+                            <div className="credit-card-content-heading">{name + " - " + card_type}</div>
                             <div className="credit-card-content-text">{description}</div>
                             <div className="credit-card-fees-container">
                                 <div className="credit-card-fees-section">
@@ -24,7 +24,7 @@ const CardList = ({name, anual_fees, joining_fees, description, rating, review, 
                                 </div>
                                 <div className="credit-card-fees-section">
                                     <div className="credit-card-fees-head">Annual Fees :</div>
-                                    <div className="credit-card-fees-text">{anual_fees}</div>
+                                    <div className="credit-card-fees-text">{annual_fees ? annual_fees : "449" + " Rs" }</div>
                                 </div>
                             </div>
                         </div>
