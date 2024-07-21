@@ -14,7 +14,7 @@ const Home = () => {
                 <div className="main-section">
                     <div className="banner-left-section">
                         <div className="banner-left-content-heading">
-                            <span className="banner-left-span">Compare</span> &nbsp;Credit Cards of your choice at once with the right data for a wise decision.
+                            <span className="banner-left-span">Compare</span> &nbsp;Credit Cards of your choice at once with the right data for a wise decison.
                         </div>
                         <div className="banner-left-content-text">
                             Select’s Card Comparison tool combines advanced tech with credible data to fuel your choice of a card that best fits your needs.
