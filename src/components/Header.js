@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import '../style/header.css'
+import '../style/homeheader.css'
 
 const Hamburger = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="52" height="24" viewBox="0 0 52 24">
@@ -12,11 +12,7 @@ const Hamburger = () => (
   </svg>
 );
 
-// const Logo = () => (
-//   <svg id="logo-52" width="170" height="41" viewBox="0 0 170 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-//     {/* SVG path data here */}
-//   </svg>
-// );
+
 
 const Header = () => {
   const [showNavbar, setShowNavbar] = useState(false);
