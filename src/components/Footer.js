@@ -44,7 +44,7 @@ const Footer = () => {
           <a href="#">&nbsp;News</a> |
           <a href="#">&nbsp;Contact</a>
         </p>
-        <p className="name">Company Name &copy; 2016</p>
+        <p className="name">Card Company &copy; 2016</p>
       </div>
     </footer>
   );
